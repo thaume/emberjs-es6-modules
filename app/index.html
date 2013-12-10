@@ -16,6 +16,7 @@
   <!-- build:js(tmp/result) assets/vendor.min.js -->
 
     <script src="/vendor/jquery/jquery.js"></script>
+    <script src="/vendor/moment/moment.js"></script>
 
     <!-- @if dist=false -->
     <script src="/vendor/handlebars/handlebars.js"></script>
@@ -25,10 +26,9 @@
     <script src="/vendor/ember/ember.prod.js"></script>
     <!-- @endif -->
 
-    <script src="/vendor/ember-data/ember-data.js"></script>
+
     <script src="/vendor/loader.js"></script>
     <script src="/vendor/ember-resolver/dist/ember-resolver.js"></script>
-    <script src="/vendor/ic-ajax/main.js"></script>
 
   <!-- endbuild -->
 
@@ -62,7 +62,7 @@
   <!-- @endif -->
 
 </head>
-<body>
+<body class="index">
   <!--[if lt IE 8]>
     <p class="browsehappy">
       You are using an <strong>outdated</strong> browser. Please
@@ -70,6 +70,17 @@
       to improve your experience.
     </p>
   <![endif]-->
+  <div id="content-wrapper">
+    <div id="content">
+      <div class="getting-started section">
+        <div id="routing-example" class="example-app">
+          <div id="target" class="example-output">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- @if tests=true -->
   <div id="qunit"></div>

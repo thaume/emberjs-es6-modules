@@ -1,3 +1,21 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="url">URL: {{target.url}}</div>
+<aside>
 
-{{outlet}}
+    <ul>
+        <li><h2>Mailboxes</h2></li>
+        {{#each}}
+            <li>
+                {{#link-to "mailbox" this currentWhen="mailbox"}}
+                    <span class="count">
+                        {{messages.length}}
+                    </span>
+                    {{name}}
+                {{/link-to}}
+            </li>
+        {{/each}}
+    </ul>
+</aside>
+
+<section class="main">
+    {{outlet}}
+</section>
