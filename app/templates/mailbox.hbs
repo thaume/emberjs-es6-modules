@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>From</th>
+        <th>To</th>
+    </tr>
+
+    {{#each messages}}
+        {{#link-to "mail" this tagName='tr'}}
+            <td>{{mail-date date}}</td>
+            <td>{{view.isActive}}{{subject}}</td>
+            <td>{{from}}</td>
+            <td>{{to}}</td>
+        {{/link-to}}
+        </tr>
+    {{/each}}
+</table>
+
+{{outlet}}
