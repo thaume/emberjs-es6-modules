@@ -4,12 +4,12 @@
 var attr = DS.attr,
     hasMany = DS.hasMany;
 
-var Post = DS.Model.extend({
+var Mailbox = DS.Model.extend({
   number: attr(),
   name: attr(),
-  messages: hasMany('email')
+  messages: hasMany('message')
 });
 
-Post.idField = 'number';
+Mailbox.idField = 'number';
 
-export default Post;
+export default Mailbox;
