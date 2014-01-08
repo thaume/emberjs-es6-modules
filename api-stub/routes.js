@@ -8,7 +8,7 @@ module.exports = function(server) {
 		server.get('/mailboxes/', function(req, res) {
 
 			var data = {
-				"mailbox": [{
+				"mailboxes": [{
 			    "name": "Inbox",
 			    "id": "inbox",
 			    "messages": ["1", "2"]
@@ -21,7 +21,7 @@ module.exports = function(server) {
 			    "id": "sent-mail",
 			    "messages": ["4"]
 			  }],
-				"emails": [{
+				"messages": [{
 	        "id": 1,
 	        "subject": "Welcome to Ember",
 	        "from": "tomster@emberjs.com",
