@@ -1,1 +1,8 @@
-export default DS.FixtureAdapter.extend();
+// Application adapter
+// ===================
+
+var ApplicationAdapter = DS.RESTAdapter.extend({
+    namespace: 'api'
+});
+
+export default ApplicationAdapter;
