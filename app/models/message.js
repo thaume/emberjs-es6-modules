@@ -1,9 +1,9 @@
-// Email model
+// Message model
 // =============
 
 var attr = DS.attr;
 
-var Comment = DS.Model.extend({
+var Message = DS.Model.extend({
   number: attr(),
   subject: attr(),
   from: attr(),
@@ -12,6 +12,6 @@ var Comment = DS.Model.extend({
   body: attr()
 });
 
-Comment.idField = 'number';
+Message.idField = 'number';
 
-export default Comment;
+export default Message;
