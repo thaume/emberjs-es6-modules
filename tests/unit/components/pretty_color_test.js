@@ -1,26 +1,26 @@
-import { test , moduleForComponent } from 'appkit/tests/helpers/module_for';
+// import { test , moduleForComponent } from 'appkit/tests/helpers/module_for';
 
-moduleForComponent('pretty-color');
+// moduleForComponent('pretty-color');
 
-test("changing colors", function(){
-  var component = this.subject();
+// test("changing colors", function(){
+//   var component = this.subject();
 
-  Ember.run(function(){
-    component.set('name','red');
-  });
+//   Ember.run(function(){
+//     component.set('name','red');
+//   });
 
-  // first call to $() renders the component.
-  equal(this.$().attr('style'), 'color: red;');
+//   // first call to $() renders the component.
+//   equal(this.$().attr('style'), 'color: red;');
 
-  Ember.run(function(){
-    component.set('name', 'green');
-  });
+//   Ember.run(function(){
+//     component.set('name', 'green');
+//   });
 
-  equal(this.$().attr('style'), 'color: green;');
-});
+//   equal(this.$().attr('style'), 'color: green;');
+// });
 
 
-test("className", function(){
-  // first call to this.$() renders the component.
-  ok(this.$().is('.pretty-color'));
-});
+// test("className", function(){
+//   // first call to this.$() renders the component.
+//   ok(this.$().is('.pretty-color'));
+// });

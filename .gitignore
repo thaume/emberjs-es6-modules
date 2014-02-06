@@ -8,6 +8,7 @@
 /node_modules
 /vendor/*
 !/vendor/loader.js
+!/vendor/sinon.js
 
 # misc
 /.sass-cache
