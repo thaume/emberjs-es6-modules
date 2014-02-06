@@ -1,14 +1,11 @@
 import { test, moduleFor } from 'ember-qunit';
 
 
-import Index from 'appkit/routes/index';
+import Index from 'appkit/routes/application';
 
-moduleFor('route:index', "Unit - IndexRoute");
+describe('route:application :: unit', function(){
+  it('should pass', function(){
 
-test("it exists", function(){
-  ok(this.subject() instanceof Index);
-});
+  });
 
-test("#model", function(){
-  deepEqual(this.subject().model(), ['red', 'yellow', 'blue']);
 });

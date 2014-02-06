@@ -1,24 +1,24 @@
-var App;
+// var App;
 
-module('Acceptances - Index', {
-  setup: function(){
-    App = startApp();
-  },
-  teardown: function() {
-    Ember.run(App, 'destroy');
-  }
-});
+// module('Acceptances - Index', {
+//   setup: function(){
+//     App = startApp();
+//   },
+//   teardown: function() {
+//     Ember.run(App, 'destroy');
+//   }
+// });
 
-test('index renders', function(){
-  expect(3);
+// test('index renders', function(){
+//   expect(3);
 
-  visit('/').then(function(){
-    var title = find('h2#title');
-    var list = find('ul li');
+//   visit('/').then(function(){
+//     var title = find('h2#title');
+//     var list = find('ul li');
 
-    equal(title.text(), 'Welcome to Ember.js');
+//     equal(title.text(), 'Welcome to Ember.js');
 
-    equal(list.length, 3);
-    equal(list.text(), 'redyellowblue');
-  });
-});
+//     equal(list.length, 3);
+//     equal(list.text(), 'redyellowblue');
+//   });
+// });

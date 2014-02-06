@@ -8,7 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- build:css(tmp/result) /assets/app.min.css -->
+  <!-- @if tests=false -->
   <link rel="stylesheet" href="/assets/app.css">
+  <!-- @endif -->
+  <!-- @if tests=true -->
+  <link rel="stylesheet" href="/vendor/mocha/mocha.css">
+  <!-- @endif -->
   <!-- endbuild -->
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
@@ -91,6 +96,7 @@
 
 </head>
 <body class="index">
+  <!-- @if tests=false -->
   <!--[if lt IE 8]>
     <p class="browsehappy">
       You are using an <strong>outdated</strong> browser. Please
@@ -109,14 +115,16 @@
       </div>
     </div>
   </div>
-
+  <!-- @endif -->
   <!-- @if tests=true -->
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
+  <div id="mocha"></div>
+  <div id="ember-testing"></div>
+
   <script src="/tests/tests.js"></script>
   <script src="/tests/test-helper.js"></script>
   <script src="/tests/test-loader.js"></script>
   <script src="/testem.js"></script>
+  <script>mocha.run();</script>
   <!-- @endif -->
 
   <!-- @if tests=false -->

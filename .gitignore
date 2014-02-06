@@ -10,6 +10,8 @@
 /vendor/*
 !/vendor/ember-shim.js
 !/vendor/qunit-shim.js
+!/vendor/loader.js
+!/vendor/sinon.js
 
 # misc
 /.sass-cache

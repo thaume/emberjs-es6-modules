@@ -19,6 +19,14 @@ function startApp(attrs) {
     App = Application.create(attributes);
     App.setupForTesting();
     App.injectTestHelpers();
+    // Setup mocha
+    mocha.globals(['Ember', 'DS', 'App', 'MD5', 'server', 'expect']);
+    mocha.timeout(5);
+    // Setup Chai
+    chai.Assertion.includeStack = true;
+    window.expect = chai.expect;
+    // Setup Sinon
+    server = sinon.fakeServer.create();
   });
 
   App.reset(); // this shouldn't be needed, i want to be able to "start an app at a specific URL"
