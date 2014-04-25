@@ -132,7 +132,7 @@
 
   <!-- @if tests=false -->
   <script>
-    window.App = require('appkit/main')['default']('appkit');
+    window.App = require('appkit/app')['default'].create(ENV.APP);
   </script>
   <!-- @endif -->
 
