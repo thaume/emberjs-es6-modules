@@ -18,4 +18,3 @@
 //     equal(list.first().text(), 'Pretty Color: purple\n');
 //   });
 // });
-

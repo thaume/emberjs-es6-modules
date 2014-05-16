@@ -25,6 +25,18 @@ function strictEqual(actual, expected, message) {
   QUnit.strictEqual.call(this, actual, expected, message);
 }
 
+// Stub ajax requests
+function stubAjax(url, json) {
+  $.mockjax({
+    url: url,
+    dataType: 'json',
+    responseText: json
+  });
+}
+
+$.mockjaxSettings.logging = false;
+$.mockjaxSettings.responseTime = 0;
+
 window.exists = exists;
 window.equal = equal;
 window.strictEqual = strictEqual;

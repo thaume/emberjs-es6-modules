@@ -1,18 +1,37 @@
-import { test, moduleForComponent } from 'ember-qunit';
+// import { test, moduleForComponent } from 'ember-qunit';
 
-test("className", function(){
-  // first call to this.$() renders the component.
-  ok(this.$().is('.pretty-color'));
-});
+// moduleForComponent('pretty-color');
 
-test("template", function(){
-  var component = this.subject();
+// test("changing colors", function(){
+//   var component = this.subject();
 
-  equal($.trim(this.$().text()), 'Pretty Color:');
+//   Ember.run(function(){
+//     component.set('name','red');
+//   });
 
-  Ember.run(function(){
-    component.set('name', 'green');
-  });
+//   // first call to $() renders the component.
+//   equal(this.$().attr('style'), 'color: red;');
 
-  equal($.trim(this.$().text()), 'Pretty Color: green');
-});
+//   Ember.run(function(){
+//     component.set('name', 'green');
+//   });
+
+//   equal(this.$().attr('style'), 'color: green;');
+// });
+
+// test("className", function(){
+//   // first call to this.$() renders the component.
+//   ok(this.$().is('.pretty-color'));
+// });
+
+// test("template", function(){
+//   var component = this.subject();
+
+//   equal($.trim(this.$().text()), 'Pretty Color:');
+
+//   Ember.run(function(){
+//     component.set('name', 'green');
+//   });
+
+//   equal($.trim(this.$().text()), 'Pretty Color: green');
+// });
